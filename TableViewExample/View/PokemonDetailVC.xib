@@ -34,22 +34,13 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPo-Hq-0cd">
-                    <rect key="frame" x="357" y="64" width="37" height="30"/>
-                    <state key="normal" title="close"/>
-                    <connections>
-                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="U1n-dO-bci"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="59C-3x-DS4" firstAttribute="top" secondItem="OFD-jg-KWh" secondAttribute="bottom" constant="40" id="EGI-dp-fR5"/>
                 <constraint firstItem="OFD-jg-KWh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EyB-du-DIP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KPo-Hq-0cd" secondAttribute="trailing" constant="20" id="KmU-IO-7mW"/>
                 <constraint firstItem="OFD-jg-KWh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="SAI-Oc-95z"/>
                 <constraint firstItem="59C-3x-DS4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hpb-f4-sR2"/>
-                <constraint firstItem="KPo-Hq-0cd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="p4m-D3-rte"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

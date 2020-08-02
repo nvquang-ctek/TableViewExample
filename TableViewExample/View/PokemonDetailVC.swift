@@ -16,14 +16,11 @@ class PokemonDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Pokemon Detail"
+        
         if let pokemon = pokemon {
             nameLabel.text = pokemon.name
             powerLabel.text = "The power of pokemon: \(pokemon.power)"
         }
-    }
-    
-    @IBAction func closeButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
 }

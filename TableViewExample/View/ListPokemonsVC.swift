@@ -15,6 +15,8 @@ class ListPokemonsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "List Pokemons"
+        
         // đăng ký UITableViewCell cho table đối với .xib file:
         pokemonsTableView.register(UINib(nibName: "PokemonCell", bundle: nil), forCellReuseIdentifier: "PokemonCell")
         pokemonsTableView.delegate = self
@@ -43,6 +45,6 @@ extension ListPokemonsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = PokemonDetailVC()
         detailVC.pokemon = pokemons[indexPath.row]
-        self.present(detailVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
